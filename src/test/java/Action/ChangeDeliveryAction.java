@@ -2,6 +2,7 @@ package Action;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import base.ActionBase;
 import model.ChangeDeliveryModel;
@@ -20,6 +21,7 @@ public class ChangeDeliveryAction extends ActionBase {
 
 	// All actions on Tracking_changeDelivari page
 	public void navigateToPage() throws Exception {
+		
 		trackingAction100.Tracking().click();
 		Thread.sleep(1000);
 		trackingAction100.ChangeDelevary().click();

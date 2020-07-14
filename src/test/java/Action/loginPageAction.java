@@ -18,6 +18,7 @@ public class loginPageAction extends ActionBase {
 		Thread.sleep(1000);
 		loginmodel.loginButton().click();
 		Thread.sleep(1000);
+		loginmodel.cookis().click();
 		loginmodel.uid().sendKeys(id);
 		loginmodel.password().sendKeys(pwd);
 		loginmodel.submitButton().click();

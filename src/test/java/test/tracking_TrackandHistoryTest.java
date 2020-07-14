@@ -10,7 +10,7 @@ public class tracking_TrackandHistoryTest extends TestBase {
 
 	WebDriver driver;
 
-	@Test(priority = '1') // landing page
+	@Test(priority = '1',groups = {"Smoke"}) // landing page
 	public void getCountrys() throws Exception {
 		TrTest().getTracking001();
 		TrTest().actionTrackHistoey();

@@ -4,7 +4,7 @@
   <test  name="test">
      <groups>
         <run>
-          <include name="Smoke"/>
+          <include name = "Smoke"/>
         </run>
      </groups>
     <classes>
@@ -12,5 +12,5 @@
       <class name="test.tracking_ChangeDeliveryTest"/>
       <class name="test.loginPageTest"/>
     </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+  </test>
+</suite> 

@@ -1,5 +1,6 @@
 package Action;
 
+import java.util.Iterator;
 import java.util.List;
 
 import org.openqa.selenium.WebDriver;
@@ -39,11 +40,14 @@ public class trackingPageAction extends ActionBase {
 
 		Select hh = new Select(trackingAction.Countrys());
 		List<WebElement> cList = hh.getOptions();
-		cList.size();
-
-		for (int i = 0; i < cList.size(); i++) {
-			System.out.println(cList.get(i).getText());
+		Iterator<WebElement> kk=cList.iterator();
+		while(kk.hasNext()) {
+			System.out.println(kk.next().getText());	
 		}
+
+//		for (int i = 0; i < cList.size(); i++) {
+//			System.out.println(cList.get(i).getText());
+//		}
 		System.out.println("===============================================================");
 
 	}
@@ -53,15 +57,23 @@ public class trackingPageAction extends ActionBase {
 		trackingAction.Countrys();
 		Select hh = new Select(trackingAction.Countrys());
 		List<WebElement> cList = hh.getOptions();
-		cList.size();
-		for (int i = 0; i < cList.size(); i++) {
-			String ll = cList.get(i).getText();
-			if (ll.equals("Bangladesh")) {
-				System.out.println(ll);
-				break;
+//		cList.size();
+//		for (int i = 0; i < cList.size(); i++) {
+//			String ll = cList.get(i).getText();
+//			if (ll.equals("Bangladesh")) {
+//				System.out.println(ll);
+//				break;
+//			}
+		Iterator<WebElement> ww = cList.iterator();
+		while(ww.hasNext()) {
+			String bd = ww.next().getText();
+			if(bd.equals("Bangladesh")) {
+				System.out.println(bd);
 			}
 		}
-	}
+		
+		}
+	
 
 	public void actionFreight01() throws Exception {
 		

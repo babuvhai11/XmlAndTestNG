@@ -1,10 +1,10 @@
-package Reporter;
+package ExcelData;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 public class ExtentReporterNG {
-	static ExtentReports extent;
+static ExtentReports extent;
 	
 	public static ExtentReports getReportObject()
 	{
@@ -20,5 +20,5 @@ public class ExtentReporterNG {
 		return extent;
 		
 	}
-}
 
+}

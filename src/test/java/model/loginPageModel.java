@@ -16,11 +16,15 @@ public class loginPageModel extends ModelBase {
 	WebElement uid = null;
 	WebElement password = null;
 	WebElement submitButton = null;
-	
+	WebElement cookis=null;
 
 	public WebElement loginButton() {
 		loginButton = driver.findElement(By.linkText("Log In"));
 		return loginButton;
+	}
+	public WebElement cookis() {
+		cookis = driver.findElement(By.className("close_btn_thick"));
+		return cookis;
 	}
 
 	public WebElement uid() {
@@ -38,7 +42,7 @@ public class loginPageModel extends ModelBase {
 		submitButton = driver.findElement(By.xpath("//button[@id='submitBtn']"));
 		return submitButton;
 	}
-
+ 
 	
 
 }

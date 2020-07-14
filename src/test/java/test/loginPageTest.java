@@ -8,8 +8,8 @@ import base.TestBase;
 public class loginPageTest extends TestBase {
 	WebDriver driver;
 
-	@Test 
-	public void loginTest() throws Exception {
+	@Test (groups = {"Smoke"})
+	public void loginTest() throws Exception  {
 		getActions().getLogin("nahid1243", "kingkong1234@");
 	}
 

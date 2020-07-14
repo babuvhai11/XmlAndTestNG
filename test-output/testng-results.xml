@@ -1,16 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="0" failed="1" ignored="1" total="2" passed="0">
+=======
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+>>>>>>> refs/remotes/origin/master
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="UPS" duration-ms="25138" started-at="2020-06-23T16:27:39 EDT" finished-at="2020-06-23T16:28:04 EDT">
+=======
+  <suite name="Suite" duration-ms="30050" started-at="2020-05-17T17:26:55 EDT" finished-at="2020-05-17T17:27:25 EDT">
+>>>>>>> refs/remotes/origin/master
     <groups>
+<<<<<<< HEAD
       <group name="Smoke">
         <method signature="tracking_TrackandHistoryTest.getCountrys()[pri:49, instance:test.tracking_TrackandHistoryTest@3b088d51]" name="getCountrys" class="test.tracking_TrackandHistoryTest"/>
       </group> <!-- Smoke -->
+=======
+>>>>>>> refs/remotes/origin/master
     </groups>
+<<<<<<< HEAD
     <test name="Test" duration-ms="25138" started-at="2020-06-23T16:27:39 EDT" finished-at="2020-06-23T16:28:04 EDT">
       <class name="test.tracking_TrackandHistoryTest">
         <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:test.tracking_TrackandHistoryTest@3b088d51]" name="beforeMethod" is-config="true" duration-ms="15995" started-at="2020-06-23T16:27:39 EDT" finished-at="2020-06-23T16:27:55 EDT">
+=======
+    <test name="Test" duration-ms="30050" started-at="2020-05-17T17:26:55 EDT" finished-at="2020-05-17T17:27:25 EDT">
+      <class name="test.loginPageTest">
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:test.loginPageTest@1e6d1014]" name="beforeMethod" is-config="true" duration-ms="18208" started-at="2020-05-17T17:26:55 EDT" finished-at="2020-05-17T17:27:13 EDT">
+>>>>>>> refs/remotes/origin/master
           <params>
             <param index="0">
               <value>
@@ -21,6 +38,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
+<<<<<<< HEAD
         <test-method status="FAIL" signature="getCountrys()[pri:49, instance:test.tracking_TrackandHistoryTest@3b088d51]" name="getCountrys" duration-ms="8254" started-at="2020-06-23T16:27:55 EDT" finished-at="2020-06-23T16:28:03 EDT">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
@@ -74,14 +92,26 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+=======
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:test.loginPageTest@1e6d1014]" name="loginTest" duration-ms="10498" started-at="2020-05-17T17:27:13 EDT" finished-at="2020-05-17T17:27:24 EDT">
+>>>>>>> refs/remotes/origin/master
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- getCountrys -->
         <test-method status="PASS" signature="afterMethod()[pri:0, instance:test.tracking_TrackandHistoryTest@3b088d51]" name="afterMethod" is-config="true" duration-ms="788" started-at="2020-06-23T16:28:03 EDT" finished-at="2020-06-23T16:28:04 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- test.tracking_TrackandHistoryTest -->
+=======
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:test.loginPageTest@1e6d1014]" name="afterMethod" is-config="true" duration-ms="1257" started-at="2020-05-17T17:27:24 EDT" finished-at="2020-05-17T17:27:25 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- test.loginPageTest -->
+>>>>>>> refs/remotes/origin/master
     </test> <!-- Test -->
   </suite> <!-- UPS -->
 </testng-results>

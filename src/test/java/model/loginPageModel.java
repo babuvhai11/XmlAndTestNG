@@ -19,11 +19,11 @@ public class loginPageModel extends ModelBase {
 	WebElement cookis=null;
 
 	public WebElement loginButton() {
-		loginButton = driver.findElement(By.linkText("Log In"));
+		loginButton = driver.findElement(By.xpath("//a[@class='acq_main_header_signupLogin' and contains(text(),'Sign up / Log in')]"));
 		return loginButton;
 	}
 	public WebElement cookis() {
-		cookis = driver.findElement(By.className("close_btn_thick"));
+		cookis = driver.findElement(By.xpath("//span[@class='icon ups-icon-x']"));
 		return cookis;
 	}
 

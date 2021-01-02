@@ -10,7 +10,7 @@ public class tracking_ChangeDeliveryTest extends TestBase {
 
 	WebDriver driver;
 
-	@Test(groups = {"Smoke"})
+	@Test(groups = { "Smoke" })
 	public void allLinksTest() throws Exception {
 		links().navigateToPage();
 		Assert.assertEquals(true, links().actionEmailLink());
@@ -26,6 +26,7 @@ public class tracking_ChangeDeliveryTest extends TestBase {
 		links().navigateToPage();
 		Assert.assertEquals(true, links().actionAssertEmailLink());
 	}
+
 	@Test(priority = '2')
 	public void assertCallUs() throws Exception {
 		links().navigateToPage();

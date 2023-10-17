@@ -19,11 +19,11 @@ public class loginPageModel extends ModelBase {
 	WebElement cookis=null;
 
 	public WebElement loginButton() {
-		loginButton = driver.findElement(By.xpath("//a[@class='acq_main_header_signupLogin' and contains(text(),'Sign up / Log in')]"));
+		loginButton = driver.findElement(By.xpath("//*[@class='icon ups-icon-user']"));
 		return loginButton;
 	}
 	public WebElement cookis() {
-		cookis = driver.findElement(By.xpath("//span[@class='icon ups-icon-x']"));
+		cookis = driver.findElement(By.xpath("//*[@id=\"__tealiumImplicitmodal\"]/div/button/span[1]"));
 		return cookis;
 	}
 

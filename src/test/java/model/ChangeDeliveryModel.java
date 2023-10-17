@@ -10,7 +10,6 @@ public class ChangeDeliveryModel extends ModelBase {
 
 	public ChangeDeliveryModel(WebDriver driver) {
 		super(driver);
-
 	}
 
 	WebElement Tracking = null;
@@ -25,6 +24,7 @@ public class ChangeDeliveryModel extends ModelBase {
 	WebElement GetStartedUps = null;
 	WebElement ClaimsDbord = null;
 	WebElement assertClaimsDbord =null;
+	
 	public WebElement Tracking() {
 		Tracking = driver.findElement(By.id("ups-menuLinks0"));
 		return Tracking;

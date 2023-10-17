@@ -17,22 +17,23 @@ public class TestBase {
 
 	public WebDriver driver;
 
-	@Parameters({ "browser" })
+//	@Parameters({ "browser" })
 	@BeforeMethod
-	public void beforeMethod(@Optional("Chrome") String browser) throws Exception {
+	public void beforeMethod() throws Exception {
 
-		Thread.sleep(2000);
-
-		if (browser.equalsIgnoreCase("Firefox")) {
-			driver = new FirefoxDriver();
-		} else if (browser.equalsIgnoreCase("Chrome")) {
-			driver = new ChromeDriver();
-
-		} else if (browser.equalsIgnoreCase("edge")) {
-			driver = new EdgeDriver();
-
-		}
-
+//		Thread.sleep(2000);
+//
+//		if (browser.equalsIgnoreCase("Firefox")) {
+//			driver = new FirefoxDriver();
+//		} else if (browser.equalsIgnoreCase("Chrome")) {
+//			driver = new ChromeDriver();
+//
+//		} else if (browser.equalsIgnoreCase("edge")) {
+//			driver = new EdgeDriver();
+//
+//		}
+		System.setProperty("webdriver.chrome.driver", "C:\\Drivers\\chromedriver.exe");
+		driver = new ChromeDriver();
 		driver.get("https://www.ups.com/us/en/Home.page");
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.manage().window().maximize();

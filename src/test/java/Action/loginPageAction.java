@@ -25,8 +25,7 @@ public class loginPageAction extends ActionBase {
 		loginmodel.submitButton().click();
 	}
 	public void LoginSupport(String id, String pwd) throws Exception {
-		Thread.sleep(1000);
-		
+		Thread.sleep(1000);	
 		loginmodel.uid().sendKeys(id);
 		loginmodel.password().sendKeys(pwd);
 		loginmodel.submitButton().click();

@@ -12,6 +12,7 @@ public class tracking_ChangeDeliveryTest extends TestBase {
 
 	@Test(groups = { "Smoke" })
 	public void allLinksTest() throws Exception {
+
 		links().navigateToPage();
 		Assert.assertEquals(true, links().actionEmailLink());
 		Assert.assertEquals(true, links().actionSelectAllCnt());
@@ -19,6 +20,7 @@ public class tracking_ChangeDeliveryTest extends TestBase {
 		Assert.assertEquals(true, links().actionGetStartedUps());
 		Assert.assertEquals(true, links().actionCallUsLink());
 		Assert.assertEquals(true, links().actionClaimsDbord());
+		
 	}
 
 	@Test(priority = '1')
